@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Happy Birthday 🎉</title>
     <style>
@@ -10,13 +11,14 @@
             color: white;
             padding-top: 100px;
         }
-        
         h1 {
             font-size: 60px;
         }
+
         p {
             font-size: 24px;
         }
+
         button {
             padding: 10px 20px;
             font-size: 18px;
@@ -26,9 +28,9 @@
             border-radius: 10px;
             cursor: pointer;
         }
-        
     </style>
 </head>
+
 <body>
 
     <h1>Happy Birthday, [Name]! 🎂</h1>
@@ -37,10 +39,15 @@
     <button onclick="showMessage()">Click for Surprise 🎁</button>
 
     <script>
-        function showMessage() {
-            alert("You are my favorite person. Stay blessed always ❤️");
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
         }
     </script>
 
 </body>
+
 </html>
